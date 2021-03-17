@@ -40,7 +40,7 @@ export default function UsernamePage({ user, posts }) {
 		<main>
 			<Metatags />
 			<UserProfile user={user} />
-			<PostFeed posts={posts} admin={false} />
+			<PostFeed posts={posts} admin />
 		</main>
 	);
 }
