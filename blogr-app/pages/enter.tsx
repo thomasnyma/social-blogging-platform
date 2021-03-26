@@ -27,7 +27,7 @@ export default function EnterPage({}) {
 // Sign in with Google buttton
 function SignInButton() {
 	const signInWithGoogle = async () => {
-		await auth.signInWithRedirect(googleAuthProvider);
+		await auth.signInWithPopup(googleAuthProvider);
 	};
 
 	return (
