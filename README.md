@@ -6,4 +6,4 @@ Full-stack Social Blogging Platform.
 * Readers can heart or like posts in realtime.
 
 ## Demo:
-Watch a live [demo](https://portfolio-b33fa.web.app/)
+Watch a live [demo](https://social-blogging-platform-a0neu9d3h-thomasnyma.vercel.app/)
