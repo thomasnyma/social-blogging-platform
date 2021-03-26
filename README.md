@@ -1,4 +1,4 @@
-# Social blogging platform
+# Social Blogging Platform
 Full-stack Social Blogging Platform.
 
 ## Features:
