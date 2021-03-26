@@ -1,4 +1,4 @@
-# Social blogging platform
+# Social Blogging Platform
 Full-stack Social Blogging Platform.
 
 ## Features:
@@ -6,4 +6,4 @@ Full-stack Social Blogging Platform.
 * Readers can heart or like posts in realtime.
 
 ## Demo:
-*Coming soon*
+Watch a live [demo](https://social-blogging-platform-a0neu9d3h-thomasnyma.vercel.app/)
