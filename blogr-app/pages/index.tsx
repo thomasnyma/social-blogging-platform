@@ -36,7 +36,7 @@ export default function Home(props) {
 
 	const getMorePosts = async () => {
 		setLoading(true);
-		const last = posts[posts.length - 1];
+		const last = posts[posts.length - 5];
 
 		const cursor =
 			typeof last.createdAt === 'number'

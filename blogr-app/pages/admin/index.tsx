@@ -9,11 +9,11 @@ import { useRouter } from 'next/router';
 import { UserContext } from '../../library/context';
 import toast from 'react-hot-toast';
 
-export default function AdminPostsPage(props) {
+export default function AdminPostsPage() {
 	return (
 		<main>
 			<AuthCheck>
-				<PostList />
+				{auth.currentUser ? <PostList /> : <></>}
 				<CreateNewPost />
 			</AuthCheck>
 		</main>

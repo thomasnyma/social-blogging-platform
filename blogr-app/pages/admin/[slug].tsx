@@ -13,11 +13,7 @@ import toast from 'react-hot-toast';
 import ImageUploader from '../../components/ImageUploader';
 
 export default function AdminPostEdit(props) {
-	return (
-		<AuthCheck>
-			<PostManager />
-		</AuthCheck>
-	);
+	return <AuthCheck>{auth.currentUser ? <PostManager /> : <></>}</AuthCheck>;
 }
 
 function PostManager() {

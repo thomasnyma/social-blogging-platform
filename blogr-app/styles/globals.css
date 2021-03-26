@@ -76,8 +76,10 @@ code {
 	top: 0;
 	padding: 0 10vw;
 	font-weight: bold;
-	border-bottom: 1px solid var(--color-gray);
 	z-index: 99;
+	-webkit-box-shadow: 0px 0px 50px -10px rgba(173, 173, 173, 1);
+	-moz-box-shadow: 0px 0px 50px -10px rgba(173, 173, 173, 1);
+	box-shadow: 0px 0px 50px -10px rgba(173, 173, 173, 1);
 }
 
 .navbar ul {
@@ -95,10 +97,14 @@ code {
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
+	margin: 0 0 0 1rem;
 }
 
 .navbar li {
 	border-radius: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 /* Buttons */
@@ -107,6 +113,7 @@ code {
 button {
 	background-color: var(--color-gray);
 	border: none;
+	outline: none;
 	color: var(--color-text);
 	padding: 1rem 2rem;
 	display: flex;
@@ -116,9 +123,8 @@ button {
 	text-decoration: none;
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: bold;
-	border-radius: 0.25rem;
+	border-radius: 0.1rem;
 	cursor: pointer;
-	margin: 0.5rem 1rem 0.5rem 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,10 +143,18 @@ button[disabled] {
 	filter: brightness(80%);
 	cursor: not-allowed;
 }
+button:focus,
+button:active {
+	border: none;
+	outline: none;
+}
 
 button.btn-blue {
 	background-color: var(--color-blue);
 	color: white;
+}
+.navbar button.btn-blue {
+	margin: 0.5rem 0 0.5rem 1rem;
 }
 
 button.btn-red {
@@ -169,6 +183,7 @@ button.btn-logo {
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	padding: 0.5rem 1rem;
+	margin: 0.5rem 0 0.5rem 0;
 }
 
 /* Cards */
@@ -177,8 +192,7 @@ button.btn-logo {
 	padding: 2rem;
 	margin: 1rem 0;
 	background-color: white;
-	border: 1px solid var(--color-gray);
-	border-radius: 8px;
+	border-radius: 0.1rem;
 }
 
 .card footer {
@@ -190,7 +204,7 @@ button.btn-logo {
 	display: block;
 	margin: auto;
 	border-radius: 50%;
-	max-width: 150px;
+	max-width: 250px;
 }
 
 .card-info {
