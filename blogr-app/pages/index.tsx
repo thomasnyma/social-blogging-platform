@@ -12,7 +12,7 @@ import Loader from '../components/Loader';
 // import toast from 'react-hot-toast';
 
 // Max number of posts to query per page
-const LIMIT = 1;
+const LIMIT = 5;
 
 export async function getServerSideProps(context) {
 	const postsQuery = firestore
@@ -36,7 +36,7 @@ export default function Home(props) {
 
 	const getMorePosts = async () => {
 		setLoading(true);
-		const last = posts[posts.length - 5];
+		const last = posts[posts.length - 1];
 
 		const cursor =
 			typeof last.createdAt === 'number'
